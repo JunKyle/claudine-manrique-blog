@@ -10,7 +10,11 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1 className="h1">Welcome to my website</h1>
-        <Link href="/blog"> blog</Link>
+        <ul>
+          <li><Link href="/presentaton">présentation</Link></li>
+          <li><Link href="/blog">blog</Link></li>
+          <li><Link href="/github">github</Link></li>
+        </ul>
       </main>
       <footer className={styles.footer}>
         <div className={styles.ctas}>

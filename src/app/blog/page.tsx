@@ -15,14 +15,15 @@ export default async function Blog () {
 	return (
         <>
             {data.posts?.reverse().map((post, i) =>{
-              return (<section key={i} className="Home__item">
+              return (<section key={i} className="Blog">
                 <Link href={`${post.url}`}>
-                <h3>{post.title}</h3>
-                <p>
-                    {parse(post.content)}
-                </p>
+                    <img src={post.picture} className="Blog__picture" />
+                    <h3>{post.title}</h3>
+                    <p className="Blog__content">
+                        {parse(post.content)}
+                    </p>
                 </Link>
-                <p>
+                <p className="networks">
                     {parse(data.social_networks ? data.social_networks : "")}
                 </p>
               </section>);

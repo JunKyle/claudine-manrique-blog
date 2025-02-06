@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import philosopher from 'next/font/local';
 import "./globals.css";
+import "./page.scss";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const localFont = philosopher({
+  src: [
+    {
+      path: '../../public/fonts/philosopher/Philosopher-Regular.ttf',
+      weight: '400'
+    },
+    {
+      path: '../../public/fonts/philosopher/Philosopher-Bold.ttf',
+      weight: '700'
+    }
+  ],
+  variable: '--font-philosopher'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${localFont.variable} font-sans`}>
         {children}
       </body>
     </html>

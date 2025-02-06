@@ -1,3 +1,40 @@
+@font-face {
+  font-family: philosopher;
+  src: url(../../public/fonts/philosopher/Philosopher-Regular.ttf);
+}
+$font-body: 'philosopher';
+
 h1 {
 	color: red;
+	font-family: $font-body;
+}
+
+.Blog {
+	border-bottom: 1px grey solid;
+	padding-bottom: 20px;
+	margin: 0 40px 40px;
+
+	@media (min-width: 928px) {
+		width: 50%;
+		margin: 0 auto 40px;
+	}
+
+	&__picture {
+		width:100%;    
+	    height: 30%;
+	    margin: 0 auto;
+	    display: block;
+	}
+
+	&__content {		
+		overflow:hidden; 
+		white-space:nowrap; 
+		text-overflow:ellipsis;
+		font-family: $font-body;
+	}
+}
+
+.networks {	
+	font-family: $font-body;
+	margin-top: 10px;
 }
