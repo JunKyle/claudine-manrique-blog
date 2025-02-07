@@ -14,12 +14,13 @@ export default async function Blog ({params}) {
     const slug = await params.slug;
 
   return (
-            <section className="Home__item">
+            <section className="BlogItem">
+              <img src={data.posts[slug].picture} className="BlogItem__picture" />
               <h3>{data.posts[slug].title}</h3>
-              <p>
+              <p className="BlogItem__content">
                   {parse(data.posts[slug].content)}
               </p>
-              <p>
+              <p className="Networks">
                   {parse(data.social_networks)}
               </p>
             </section>

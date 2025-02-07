@@ -2,39 +2,268 @@
   font-family: philosopher;
   src: url(../../public/fonts/philosopher/Philosopher-Regular.ttf);
 }
-$font-body: 'philosopher';
 
-h1 {
-	color: red;
-	font-family: $font-body;
+@font-face {
+  font-family: geometry_soft_pro;
+  src: url(../../public/fonts/geometry_soft_pro/GeometrySoftPro-BoldN.otf);
+}
+
+@font-face {
+  font-family: quenda;
+  src: url(../../public/fonts/quenda/Quenda-Medium.otf);
+}
+
+$font-philosopher: 'philosopher';
+$font-geometry_soft_pro: 'geometry_soft_pro';
+$font-quenda: 'quenda';
+
+$color-content : #7e7e7e;
+$color-title : #4b4b4b;
+$color-networks : #6c6c6c;
+$color-white: #fff;
+$color-background-global: #f3f3f3;
+$color-black: #000;
+
+body, html {
+	height: 100%;
+	background-color: $color-background-global;
+	margin: 0;
+	position : relative;
+}
+
+.Header {
+  width: auto;
+  height: 100%;
+  position: relative;
+
+	&__header {
+    width: 100%;
+    height: 100%;
+    display: block;	
+	}
+	
+	&__image {
+		background-image: url(/images/0001_00.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+
+	&__content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    animation: translateIn 1s;
+    width: 100%;
+	}
+
+  h1 {
+	  font-family: $font-philosopher;
+	  font-size: 5em;
+	  margin: 0 0 20px;
+	  text-align: center;
+	  font-weight: 100;
+	  color: $color-white;
+	  animation: fadein 2s;
+  }
+
+	&__subtitle {
+    font-family: $font-philosopher;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+	  color: $color-white;
+    animation: fadein 2s;
+	}
+
+	&__nav {
+		font-family: $font-philosopher;
+		font-size: 30px;
+		color: $color-white;
+		cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+		@media (min-width: 670px) {
+		  display: none;
+		}
+	}
+}
+
+.gradient {
+	background-image: linear-gradient(0deg, #636363 0%, rgba(0, 0, 0, 0) 50%);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.Nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $color-black;
+  overflow-x: hidden;
+  // transition: 0.5s;
+  padding-top: 35px;
+
+  &.show {
+  	width : 250px;
+  }
+
+  &.hidden {
+  	width: 0;
+  }
+
+	@media (min-width: 670px) {
+		width: 100% !important;
+	  right: 0;
+		position: absolute;
+		top: 0;
+		left: unset;
+		background-color: transparent;
+  	overflow-x: unset;
+  	padding: unset;
+  	transition : none;
+	}
+	
+	&__items {
+
+		@media (min-width: 670px) {
+			width: 100%;
+	    display: flex;
+	    justify-content: space-around;
+	    text-decoration: none;
+	    list-style: none;
+		}
+	}
+
+	&__item {
+	  padding: 8px 8px 8px 32px;
+	  display: block;
+	  // transition: 0.3s;
+	  cursor: pointer;
+	  margin-top: 5px;
+
+		@media (min-width: 670px) {
+		  padding: 0;
+		  display: block;
+		  transition: none;
+		  cursor: pointer;
+		  margin-top: 0;
+		}
+
+	  a {
+			font-family: $font-philosopher;
+			color: $color-white;
+		  font-size: 25px;
+	  }
+
+	  &:hover {
+	  	background-color: $color-black;
+	  }
+	}
+
+	&__close {
+		color: $color-white;
+		position: absolute;
+	  top: 0;
+	  right: 0;
+	  font-size: 35px;
+	  margin-left: 50px;
+	  width: 40px;
+	  text-align: center;
+
+	  &:hover {
+	  	background-color: $color-white;
+	  }	  
+
+		@media (min-width: 670px) {
+		  display: none;
+		}
+	}
 }
 
 .Blog {
-	border-bottom: 1px grey solid;
+	border-bottom: 1px $color-content solid;
 	padding-bottom: 20px;
 	margin: 0 40px 40px;
 
-	@media (min-width: 928px) {
+	@media (min-width: 670px) {
 		width: 50%;
 		margin: 0 auto 40px;
 	}
 
-	&__picture {
-		width:100%;    
-	    height: 30%;
-	    margin: 0 auto;
-	    display: block;
+	h3 {
+		font-family: $font-philosopher;
+		color: $color-title;
+	}
+
+	&__picture {   
+    height: 10em;
+    margin: 10px auto;
+    display: block;
 	}
 
 	&__content {		
 		overflow:hidden; 
 		white-space:nowrap; 
 		text-overflow:ellipsis;
-		font-family: $font-body;
+		font-family: $font-philosopher;
+		color:$color-content;
 	}
 }
 
-.networks {	
-	font-family: $font-body;
+.BlogItem {
+	border-bottom: 1px $color-content solid;
+	padding-bottom: 20px;
+	margin: 0 40px 40px;
+
+	@media (min-width: 668px) {
+		width: 50%;
+		margin: 0 auto 40px;
+	}
+
+	h3 {
+		font-family: $font-philosopher;
+		color: $color-title;
+	}
+
+	&__picture {
+		width: 100%;
+    margin: 10px auto;
+    display: block;
+	}
+
+	&__content {
+		font-family: $font-philosopher;
+		color:$color-content;
+	}
+	
+}
+
+.Networks {	
+	font-family: $font-philosopher;
 	margin-top: 10px;
+	color:$color-networks;
+	display: flex;
+  align-items: center;
+
+	&__picto {		
+    width: 1.3em;
+	}
+
+	&__link {
+    padding-top: 5px;
+		padding-left: 5px;
+	}
 }

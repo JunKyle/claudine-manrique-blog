@@ -23,7 +23,7 @@ export default async function Blog () {
                         {parse(post.content)}
                     </p>
                 </Link>
-                <p className="networks">
+                <p className="Networks">
                     {parse(data.social_networks ? data.social_networks : "")}
                 </p>
               </section>);

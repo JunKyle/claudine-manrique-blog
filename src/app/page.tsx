@@ -1,40 +1,39 @@
 'use client'
 import Image from "next/image";
-import styles from "./page.module.css";
 import Blog from "./blog";
 import "./page.scss";
 import Link from 'next/link';
+import { useState } from "react";
 
 export default function Home() {
+  const [openNav, setOpenNav] = useState(false);
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <h1 className="h1">Welcome to my website</h1>
-        <ul>
-          <li><Link href="/presentaton">présentation</Link></li>
-          <li><Link href="/blog">blog</Link></li>
-          <li><Link href="/github">github</Link></li>
-        </ul>
-      </main>
-      <footer className={styles.footer}>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
+    <>
+      <header className="Header">
+        <div className="Header__header">
+          <div className="Header__image"></div>
+          <div className="gradient"></div>
+          <div className="Header__content">
+            <h1>Claudine Manrique</h1>
+            <span className="Header__subtitle">Ecrivain-e, artiste, développeur-se</span>
+          </div>
+          <span className="Header__nav" onClick={() => setOpenNav(true)}>&#9776;</span>
         </div>
+      </header>
+      <nav className={"Nav "+ (openNav ? 'show' : 'hidden')}>
+        <a className="Nav__close" onClick={() => setOpenNav(false)}>&times;</a>
+        <ul className="Nav__items">
+          <li className="Nav__item"><Link href="/qui-suis-je">qui suis-je</Link></li>
+          <li className="Nav__item"><Link href="/blog">blog</Link></li>
+          <li className="Nav__item"><Link href="/portefolio">portefolio développeuse</Link></li>
+          <li className="Nav__item"><Link href="/publications">publications</Link></li>
+          <li className="Nav__item"><Link href="/contact">contact</Link></li>
+        </ul>
+      </nav>
+      <main className="">
+      </main>
+      <footer className="">
       </footer>
-    </div>
+    </>
   );
 }
