@@ -1,16 +1,8 @@
 import parse from 'html-react-parser';
-import { promises as fs } from 'fs';
+import data from "../data/blog.json";
 import Link from "next/link";
 
-async function getData() {
-  const path = process.cwd() + "/src/app/data/blog.json"
-  const file = await fs.readFile(path, "utf8");
-  const data = JSON.parse(file);
-  return data;
-}
-
-export default async function Blog () {
-    const data = await getData();    
+export default function Blog () {
 
 	return (
         <>

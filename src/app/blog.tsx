@@ -1,9 +1,6 @@
-import data from "../../data/blog.json";
-import parse from 'html-react-parser';
 import Link from "next/link";
 
-export default function Blog ({params}) {
-    const slug = params.slug;
+export default async function Blog ({data}) {
 
   return (
             <section className="BlogItem">
