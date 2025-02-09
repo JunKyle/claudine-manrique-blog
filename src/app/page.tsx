@@ -20,7 +20,7 @@ export default function Home() {
         </section>
         <span className="separator"></span>
         <section className="Home__section">
-          <div className="Home__paragraph Home__paragraph--center">
+          <div className="Home__paragraph Home__paragraph--center Home__paragraph--reverse">
             <p className="paragraph Networks Networks--home">
               <a target='_blank' className='Networks__link' href='https://www.instagram.com/junkyclo/#'><
                 img className='Networks__picto' src='/images/instagram.webp' />
@@ -39,11 +39,12 @@ export default function Home() {
         </section>
         <span className="separator"></span>
         <section className="Home__section">
-          <div className="Home__paragraph">
-            <Link className="Home__blog" href={`${data.posts[data.posts.length - 1].url}`}>
-              <BlogComponent params={{slug: data.posts.length - 1}} />
-            </Link>
+          <div className="Home__paragraph Home__paragraph--column">
             <h2 className="Home__title">Dernier article de blog</h2>
+            <div className="Home__blog">
+              <Link className="Home__blogLink" href={`${data.posts[data.posts.length - 1].url}`}></Link>
+              <BlogComponent params={{slug: data.posts.length - 1}} />
+            </div>
           </div>
         </section>
       </main>

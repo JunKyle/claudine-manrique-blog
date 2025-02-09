@@ -310,7 +310,6 @@ body, html {
 
 	&__paragraph {
 		display: flex;
-		flex-direction: column-reverse;
     align-items: center;
 		padding: 50px 0;
 		color: $color-light-grey;
@@ -322,6 +321,18 @@ body, html {
 
 		&--center {			
     	justify-content: center;
+		}
+
+		&--column {
+			flex-direction: column;
+		}
+
+		&--reverse {
+			flex-direction: column-reverse;
+		}
+
+		.paragraph {
+			padding-left: 20px;
 		}
 	}
 
@@ -382,6 +393,14 @@ body, html {
 		.Networks {
 			display: none;
 		}
+	}
+
+	&__blogLink {
+		position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 	}
 }
 
