@@ -21,9 +21,28 @@ const localFont = philosopher({
   variable: '--font-philosopher'
 })
  
-export const metadata: Metadata = {
-  title: 'Claudine Manrique',
-  description: 'mon site',
+export const metadata: Metadata = {    
+  metadataBase: new URL(`https://www.claudine-manrique.com`),
+  title: 'Claudine Manrique | mon site',
+  description: 'Portefolio et blog de Claudine Manrique',
+  alternates: {
+      canonical: './',
+  },
+  openGraph: {
+    title: 'Claudine Manrique | Website',
+    description: 'Portefolio et blog de Claudine Manrique',
+    url: 'https://www.claudine-manrique.com',
+    siteName: 'claudine-manrique',
+    images: [
+      {
+        url: 'https://claudine-manrique.com/images/0001_00.jpg',
+        width: 800,
+        height: 600,
+      }
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  }
 }
 
 export default function RootLayout({

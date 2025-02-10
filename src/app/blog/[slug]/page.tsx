@@ -1,6 +1,11 @@
 import data from "../../data/blog.json";
 import parse from 'html-react-parser';
 import Link from "next/link";
+ 
+export const metadata: Metadata = {
+  title: 'Claudine Manrique | Blog',
+  description: 'Article de Claudine Manrique',
+}
 
 export default function Blog ({params}) {
     const slug = params.slug;
