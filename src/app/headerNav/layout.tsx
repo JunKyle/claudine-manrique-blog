@@ -26,7 +26,7 @@ export default function HeaderNav({
         <ul className="Nav__items">
           <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/qui-suis-je">qui suis-je</Link></li>
           <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/blog">blog</Link></li>
-          <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/portefolio">portefolio développeuse</Link></li>
+          <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/portefolio-developpeuse">portefolio développeuse</Link></li>
           <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/publications">publications</Link></li>
           <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/contact">contact</Link></li>
         </ul>

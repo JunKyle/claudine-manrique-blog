@@ -423,3 +423,69 @@ body, html {
 		padding: 0 1em;
 	}
 }
+
+.PortefolioDeveloppeuse {
+	width: 80%;
+	margin: 4em auto;
+
+	&__grid {		
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__picture {
+		width: 100%;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	&__content {
+		border-right: 1px solid $color-dark-grey;
+		border-bottom: 1px solid $color-dark-grey;
+		border-left: 1px solid $color-dark-grey;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		padding: 5px;
+
+	}
+
+	&__title {
+		font-family: $font-philosopher;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    color: $color-dark-grey;
+	}
+
+	&__description {	
+		font-family: $font-philosopher;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    color: $color-dark-grey;
+	}
+
+	&__link {	
+		font-family: $font-philosopher;		
+    color: $color-dark-grey;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+
+    span {
+    	padding-left: 5px;
+    }
+	}
+
+	h2 {	
+		font-family: $font-philosopher;
+    color: $color-dark-grey;
+		margin-bottom: 2em;	
+	}
+}
