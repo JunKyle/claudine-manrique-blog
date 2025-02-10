@@ -19,6 +19,7 @@ $font-quenda: 'quenda';
 
 $color-light-grey : #7e7e7e;
 $color-dark-grey : #4b4b4b;
+$color-light-grey: #d9d8d8;
 $color-networks : #6c6c6c;
 $color-white: #fff;
 $color-black: #242424;
@@ -445,15 +446,17 @@ body, html {
 		width: 100%;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
+		box-shadow: 10px 10px 10px 0px rgba(219,219,219,1);
 	}
 
 	&__content {
-		border-right: 1px solid $color-dark-grey;
-		border-bottom: 1px solid $color-dark-grey;
-		border-left: 1px solid $color-dark-grey;
+		border-right: 1px solid $color-light-grey;
+		border-bottom: 1px solid $color-light-grey;
+		border-left: 1px solid $color-light-grey;
 		border-bottom-left-radius: 10px;
 		border-bottom-right-radius: 10px;
-		padding: 5px;
+		padding: 8px;
+		box-shadow: 10px 10px 10px 0px rgba(219,219,219,1);
 
 	}
 
@@ -477,6 +480,11 @@ body, html {
     font-size: 0.8em;
     display: flex;
     align-items: center;
+    margin-bottom: 3px;
+
+    &:hover {
+    	color: #808080;
+    }
 
     span {
     	padding-left: 5px;
