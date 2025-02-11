@@ -25,6 +25,18 @@ $color-white: #fff;
 $color-black: #242424;
 $color-background-global: #f3f3f3;
 
+@function textShadow($precision, $size, $color){
+  $value: null; 
+  $offset: 0;
+  $length: $size * (1 / $precision) - 1;
+  @for $i from 0 through $length {
+    $offset: $offset + $precision;
+    $shadow: $offset + px $offset + px $color;
+    $value: append($value, $shadow, comma);
+  }
+  @return $value;
+}
+
 body, html {
 	height: 100%;
 	background-color: $color-background-global;
@@ -44,10 +56,10 @@ body, html {
 	}
 	
 	&__image {
-		background-image: url(/images/0001_00.jpg);
+		background-image: url(/images/header.png);
     height: 100%;
     background-attachment: fixed;
-    background-position: center;
+    //background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 	}
@@ -67,8 +79,10 @@ body, html {
 	  margin: 0 0 20px;
 	  text-align: center;
 	  font-weight: 100;
-	  color: $color-white;
+	  // color: $color-white;
 	  animation: fadein 2s;
+	  color: #5362F6;
+	  text-shadow: textShadow(0.25, 6, #E485F8);
   }
 
 	&__subtitle {
@@ -76,7 +90,7 @@ body, html {
     font-size: 15px;
     text-align: center;
     display: block;
-	  color: $color-white;
+	  color: #5362F6;
     animation: fadein 2s;
 	}
 
@@ -226,7 +240,7 @@ body, html {
 		white-space:nowrap; 
 		text-overflow:ellipsis;
 		font-family: $font-philosopher;
-		color:$color-light-grey;
+		color:$color-dark-grey;
 	}
 }
 
@@ -253,7 +267,7 @@ body, html {
 
 	&__content {
 		font-family: $font-philosopher;
-		color:$color-light-grey;
+		color:$color-dark-grey;
 	}
 	
 }

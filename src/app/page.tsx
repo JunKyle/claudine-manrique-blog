@@ -22,7 +22,7 @@ export default function Home() {
           <div className="Home__paragraph Home__paragraph--center Home__paragraph--reverse">
             <p className="paragraph Networks Networks--home">
               <a target='_blank' className='Networks__link' href='https://www.instagram.com/junkyclo/#'><
-                img className='Networks__picto' src='/images/instagram.webp' />
+                img className='Networks__picto' src='/images/instagram.png' />
               </a>
               <a target='_blank' className='Networks__link' href='https://www.threads.net/@junkyclo'>
                 <img className='Networks__picto' src='/images/threads.png' />
