@@ -8,8 +8,7 @@ export default function PortefolioDeveloppeuse() {
     <>
       <main className="PortefolioDeveloppeuse">
         <h2>Projets développement web</h2>
-        <section>
-          <div className="PortefolioDeveloppeuse__grid">
+        <section className="PortefolioDeveloppeuse__grid">
             {data.portefolioDev?.map((post, i) =>{
               return (
                 <div key={i} className="PortefolioDeveloppeuse__item">
@@ -27,7 +26,6 @@ export default function PortefolioDeveloppeuse() {
                 </div>
               );
             })}
-          </div>
         </section>
       </main>
     </>

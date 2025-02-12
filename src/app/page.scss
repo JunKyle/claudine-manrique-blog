@@ -49,6 +49,10 @@ body, html {
   height: 100%;
   position: relative;
 
+	&--minified {
+		height: 250px;
+	}
+
 	&__link {
     width: 100%;
     height: 100%;
@@ -216,12 +220,12 @@ body, html {
 
 .Blog {
 	border-bottom: 1px $color-light-grey solid;
-	padding-bottom: 20px;
-	margin: 0 40px 40px;
+	padding-bottom: 4em;
+	margin: 4em;
 
 	@media (min-width: 670px) {
 		width: 50%;
-		margin: 0 auto 40px;
+		margin: 0 auto 4em;
 	}
 
 	h3 {
@@ -246,12 +250,12 @@ body, html {
 
 .BlogItem {
 	border-bottom: 1px $color-light-grey solid;
-	padding-bottom: 20px;
-	margin: 0 40px 40px;
+	padding-bottom: 4em;
+	margin: 4em;
 
 	@media (min-width: 668px) {
 		width: 50%;
-		margin: 0 auto 40px;
+		margin: 0 auto 4em;
 	}
 
 	h3 {
@@ -326,9 +330,11 @@ body, html {
 	&__paragraph {
 		display: flex;
     align-items: center;
-		padding: 50px 0;
+		padding-bottom: 4em;
 		color: $color-light-grey;
 		font-family: $font-philosopher;
+		flex-direction: column;
+		margin-top: 4em;
 
 		@media (min-width: 928px) {
 			flex-direction: row;
@@ -352,7 +358,7 @@ body, html {
 	}
 
 	&__avatar {
-		margin-top: 32px;
+		margin: 0 0 4em;
 
 		@media (min-width: 928px) {
 			margin-right: 32px;
@@ -445,10 +451,14 @@ body, html {
 
 	&__grid {		
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: 1fr;
 		grid-column-gap: 20px;
 		grid-row-gap: 20px;
+
+		@media (min-width: 928px) {
+		grid-template-columns: repeat(3, 1fr);
+		}
 	}
 
 	&__item {

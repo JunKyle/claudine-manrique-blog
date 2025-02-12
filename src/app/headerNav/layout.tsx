@@ -1,6 +1,7 @@
 'use client';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'
 
 export default function HeaderNav({
   children,
@@ -8,9 +9,11 @@ export default function HeaderNav({
   children: React.ReactNode;
 }>) {
   const [openNav, setOpenNav] = useState(false);
+  const pathname = usePathname();
+    console.log("router", pathname.indexOf("/blog"));
   return (
     <>
-      <header className="Header">
+      <header className={"Header " + (pathname !=="/" ? "Header--minified" : "")}>
         <Link className="Header__link" href="/">
           <div className="Header__image"></div>
           <div className="gradient"></div>
@@ -18,8 +21,8 @@ export default function HeaderNav({
             <h1>Claudine Manrique</h1>
             <span className="Header__subtitle">Ecrivain-e, artiste, développeur-se</span>
           </div>
-          <span className="Header__nav" onClick={() => setOpenNav(true)}>&#9776;</span>
         </Link>
+        <span className="Header__nav" onClick={() => setOpenNav(true)}>&#9776;</span>
       </header>
       <nav className={"Nav "+ (openNav ? 'show' : 'hidden')}>
         <a className="Nav__close" onClick={() => setOpenNav(false)}>&times;</a>
