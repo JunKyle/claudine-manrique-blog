@@ -10,7 +10,6 @@ export default function HeaderNav({
 }>) {
   const [openNav, setOpenNav] = useState(false);
   const pathname = usePathname();
-    console.log("router", pathname.indexOf("/blog"));
   return (
     <>
       <header className={"Header " + (pathname !=="/" ? "Header--minified" : "")}>
@@ -19,7 +18,7 @@ export default function HeaderNav({
           <div className="gradient"></div>
           <div className="Header__content">
             <h1>Claudine Manrique</h1>
-            <span className="Header__subtitle">Ecrivain-e, artiste, développeur-se</span>
+            <span className="Header__subtitle">Auteurice, artiste, développeur·se</span>
           </div>
         </Link>
         <span className="Header__nav" onClick={() => setOpenNav(true)}>&#9776;</span>

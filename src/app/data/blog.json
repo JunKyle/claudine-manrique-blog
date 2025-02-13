@@ -6,7 +6,8 @@
 			"goodreads": "https://www.goodreads.com/book/show/94200461-code-d-un-soir",
 			"title": "Code d'un Soir",
 			"picture":"/images/code1soir.jpg",
-			"description" : "Romance contemporaine éditée aux éditions Laska (maison d'édition fermé)"
+			"description" : "Romance contemporaine éditée aux éditions Laska (maison d'édition fermé)",
+			"resume": "C’était juste un coup d’un soir.<br/>Premier jour pour Dap en tant qu’informaticien. Après des années de galère, le jeune homme sent qu’il a enfin trouvé sa voie. Rien ne pourra le faire échouer.<br/>Sauf qu’il a couché la veille avec son boss.<br/>Linus, son taciturne chef informatique, n’est pas du tout amusé par la situation. Tous deux décident alors de garder secrète leur aventure et de se comporter en simples collègues. Facile ? Pas quand on commence à échanger des messages jusqu’à une heure du matin ou à se faire du pied sous le bureau.<br/>Simples collègues, amants pendant la pause ou plus encore ? Entre la vie en open-space et le management tyrannique, cette embarrassante relation a-t-elle un avenir ?"
 		},	
 		{
 			"babelio": "https://www.babelio.com/livres/Manrique-Skell-tome-1--Les-chasses-de-Ravenous/1379516",
@@ -14,7 +15,8 @@
 			"goodreads": "https://www.goodreads.com/book/show/58962828-skell",
 			"title": "Skell - Tome 1 - Les Chasses de Ravenous",
 			"picture":"/images/skell.jpg",
-			"description" : "Roman de fantasy édité aux éditions Onyx (maison d'édition fermé)"
+			"description" : "Roman de fantasy édité aux éditions Onyx (maison d'édition fermé)",
+			"resume": "Skell Annh en a plus qu’assez.<br/>Après six ans à étudier la magie et les lois pour devenir Maître Ezelkian, elle décide de raccrocher le manteau. Enfin... jusqu’à ce qu’elle se retrouve coincée dans le bureau de lae Directeur·ice avec un Maître Ezelkian banni de leur communauté.<br/>Le Salon des Ezelkians tremble encore de l’époque où Baltimore Faillaise était un des leurs. Implacable et insupportable, il n’a eu de cesse de semer le chaos pour les intérêts d’autrui. Et le voilà de retour.<br/>Lae Directeur·ice voit d’un très bon œil le hasard qui réunit ces deux-là dans son bureau. Quand iel remet l’apprentie Ezelkian entre les mains de cet ex-retraité, Skell n’a aucune idée de ce qui l’attend.<br/>Des meurtres sanglants, une affaire d’héritage, des corps sans tête qui sèment la panique. Maître Baltimore Faillaise ne va pas laisser une seconde à Skell pour souffler ou s’interroger sur ses choix de vie. Le temps presse.<br/>Premier arrêt : la foire d’Omniville (et son tueur en série) !"
 		},
 		{
 			"url": "https://www.latelierdujeudi.com",
@@ -23,13 +25,15 @@
 			"goodreads": "https://www.goodreads.com/book/show/58644960-apocawitch",
 			"title": "Apocawitch",
 			"picture":"/images/apocawitch.jpg",
-			"description" : "Recueil de nouvelles, texte 'Reines du crépuscule' auto-edité par L'Atelier Du Jeudi (maison d'édition associative)"
+			"description" : "Recueil de nouvelles, texte 'Reines du crépuscule' auto-edité par L'Atelier Du Jeudi (maison d'édition associative)",
+			"resume": "L’Atelier Du Jeudi est heureux de présenter sa première anthologie, avec pour thème les Sorcières et l’Apocalypse.<br/>Sur un balai ou dans un vaisseau, au fond de sombres manoirs ou en colocation, informaticiennes, pizzaïolos ou invocatrices de démons, les Sorcières sont partout et, comme nous, elles doivent faire face aux soucis du quotidien et aux vicissitudes d’un monde sans pitié ni patience. Mais une choses est sûre : elles ne vont pas se laisser faire. Elles vont changer le monde, même si ça signifie y mettre le feu au passage.<br/>7 histoires de Sorcières, de fantasy, de fantastique et de science-fiction.<br/>Chats inclus."
 		},
 		{
 			"url": "https://presences-d-esprits.com/aoc-n57/",
 			"title": "Sulaï",
 			"picture":"/images/sulai.jpg",
-			"description" : "Nouvelle 'Sulaï' publié A.O.C. #57 (revue littéraire)"
+			"description" : "Nouvelle 'Sulaï' publié A.O.C. #57 (revue littéraire)",
+			"resume": "Fernando, employé de la Radiosa Company, guide Madame Sulaï dans l’univers virtuel qui doit lui montrer des visions de ses avenirs potentiels les plus radieux.<br/>Un job routinier qu’il fait des dizaines de fois par semaine. Mais lors de la séance de cette dame tranquille et effacée, tout semble dysfonctionner…"
 		},
 		{
 			"url": "https://www.latelierdujeudi.com",
@@ -37,7 +41,8 @@
 			"goodreads": "https://www.goodreads.com/book/show/59000968-carolin-e",
 			"title": "Carolin·e",
 			"picture":"/images/carolin-e.jpg",
-			"description" : "Bande Dessinée 'Sulaï' auto-édité par L'Atelier Du Jeudi (maison d'édition associative)"
+			"description" : "Bande Dessinée 'Sulaï' auto-édité par L'Atelier Du Jeudi (maison d'édition associative)",
+			"resume": "C'est l'histoire d'un·e astronaute perdu·e dans l'espace.<br/>L'histoire de Loup, embarqué·e malgré ielle dans un trafic d'étoiles.<br/>Déterminé·e à défendre ce qui est juste, ielle va devoir affronter son propre passé."
 		}
 	],
 	"portefolioDev": [		
