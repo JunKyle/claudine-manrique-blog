@@ -1,22 +1,63 @@
 {
+	"bibliographie": [	
+		{
+			"babelio": "https://www.babelio.com/livres/Manrique-Code-dun-soir/1492509",
+			"booknode": "https://booknode.com/code_dun_soir_03487491",
+			"goodreads": "https://www.goodreads.com/book/show/94200461-code-d-un-soir",
+			"title": "Code d'un Soir",
+			"picture":"/images/code1soir.jpg",
+			"description" : "Romance contemporaine éditée aux éditions Laska (maison d'édition fermé)"
+		},	
+		{
+			"babelio": "https://www.babelio.com/livres/Manrique-Skell-tome-1--Les-chasses-de-Ravenous/1379516",
+			"booknode": "https://booknode.com/skell_tome_1_les_chasses_de_ravenous_03410838",
+			"goodreads": "https://www.goodreads.com/book/show/58962828-skell",
+			"title": "Skell - Tome 1 - Les Chasses de Ravenous",
+			"picture":"/images/skell.jpg",
+			"description" : "Roman de fantasy édité aux éditions Onyx (maison d'édition fermé)"
+		},
+		{
+			"url": "https://www.latelierdujeudi.com",
+			"babelio": "https://www.babelio.com/livres/Kandas-Apocawitch/1360930",
+			"booknode": "https://booknode.com/apocawitch_03410283",
+			"goodreads": "https://www.goodreads.com/book/show/58644960-apocawitch",
+			"title": "Apocawitch",
+			"picture":"/images/apocawitch.jpg",
+			"description" : "Recueil de nouvelles, texte 'Reines du crépuscule' auto-edité par L'Atelier Du Jeudi (maison d'édition associative)"
+		},
+		{
+			"url": "https://presences-d-esprits.com/aoc-n57/",
+			"title": "Sulaï",
+			"picture":"/images/sulai.jpg",
+			"description" : "Nouvelle 'Sulaï' publié A.O.C. #57 (revue littéraire)"
+		},
+		{
+			"url": "https://www.latelierdujeudi.com",
+			"booknode": "https://booknode.com/caroline_03411961",
+			"goodreads": "https://www.goodreads.com/book/show/59000968-carolin-e",
+			"title": "Carolin·e",
+			"picture":"/images/carolin-e.jpg",
+			"description" : "Bande Dessinée 'Sulaï' auto-édité par L'Atelier Du Jeudi (maison d'édition associative)"
+		}
+	],
 	"portefolioDev": [		
 		{
 			"url": "https://www.am-bart.com/",
 			"github": "https://github.com/JunKyle/anne-marie-b",
 			"title": "Site d'Anne-Marie Bartringer",
-			"picture":"/images/0001_00.jpg",
+			"picture":"/images/portefolio-developpeuse-site-anne-marie-b.png",
 			"description" : "Site personnel de l'artiste Anne-Marie Bartringer"
 		},
 		{
 			"github": "https://github.com/JunKyle/cat-count-app",
 			"title": "Application Cat-Count",
-			"picture":"/images/0001_00.jpg",
+			"picture":"/images/portefolio-developpeuse-cat-count-app.png",
 			"description" : "Jeu Cat-count de comptage de chats"
 		},
 		{
 			"url": "https://www.latelierdujeudi.com/",
 			"title": "Site de L'Atelier Du Jeudi",
-			"picture":"/images/0001_00.jpg",
+			"picture":"/images/portefolio-developpeuse-site-latelier-du-jeudi.png",
 			"description" : "Site et boutique de l'association L'Atelier Du Jeudi"
 		}
 	],

@@ -12,7 +12,7 @@ export default function PortefolioDeveloppeuse() {
             {data.portefolioDev?.map((post, i) =>{
               return (
                 <div key={i} className="PortefolioDeveloppeuse__item">
-                  <Image className="PortefolioDeveloppeuse__picture" src={post.picture} width="200" height="200" alt={post.title} />
+                  <Image className="PortefolioDeveloppeuse__picture Bibliographie__picture--width" src={post.picture} width="200" height="200" alt={post.title} />
                   <div className="PortefolioDeveloppeuse__content">
                     <span className="PortefolioDeveloppeuse__title">{post.title}</span>
                     <p className="PortefolioDeveloppeuse__description">{post.description}</p>
