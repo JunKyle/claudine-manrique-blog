@@ -17,7 +17,25 @@ export default function HeaderNav({
           <div className="Header__image"></div>
           <div className="gradient"></div>
           <div className="Header__content">
-            <h1>Claudine Manrique</h1>
+            <h1 aria-label="Claudine Manrique">
+             <span aria-hidden="true">C</span>
+              <span aria-hidden="true">l</span>
+              <span aria-hidden="true">a</span>
+              <span aria-hidden="true">u</span>
+              <span aria-hidden="true">d</span>
+              <span aria-hidden="true">i</span>
+              <span aria-hidden="true">n</span>
+              <span aria-hidden="true">e</span>
+              <span aria-hidden="true"> </span>
+              <span aria-hidden="true">M</span>
+              <span aria-hidden="true">a</span>
+              <span aria-hidden="true">n</span>
+              <span aria-hidden="true">r</span>
+              <span aria-hidden="true">i</span>
+              <span aria-hidden="true">q</span>
+              <span aria-hidden="true">u</span>
+              <span aria-hidden="true">e</span>
+            </h1>
             <span className="Header__subtitle">Auteurice, artiste, développeur·se</span>
           </div>
         </Link>
@@ -26,9 +44,8 @@ export default function HeaderNav({
       <nav className={"Nav "+ (openNav ? 'show' : 'hidden')}>
         <a className="Nav__close" onClick={() => setOpenNav(false)}>&times;</a>
         <ul className="Nav__items">
-          <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/qui-suis-je">qui suis-je</Link></li>
           <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/blog">blog</Link></li>
-          <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/portefolio-developpeuse">portefolio développeuse</Link></li>
+          <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/informatique">informatique</Link></li>
           <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/bibliographie">bibliographie</Link></li>
           <li className="Nav__item"><Link onClick={() => setOpenNav(false)} href="/contact">contact</Link></li>
         </ul>

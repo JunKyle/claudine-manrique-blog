@@ -50,13 +50,17 @@ body, html {
   position: relative;
 
 	&--minified {
-		height: 250px;
+		height: 200px;
 	}
 
 	&__link {
     width: 100%;
     height: 100%;
-    display: block;	
+    display: block;
+
+		@media (min-width: 928px) {
+    	padding-top: 45px;
+		}
 	}
 	
 	&__image {
@@ -87,6 +91,16 @@ body, html {
 	  animation: fadein 2s;
 	  color: #5362F6;
 	  text-shadow: textShadow(0.25, 6, #E485F8);
+
+	  span {
+		  color: #5362F6;
+		  text-shadow: textShadow(0.25, 6, #8490ff); //#E485F8);
+		}
+
+		span:nth-child(2n) {
+		  color: #c93dff; //#ED625C;
+		  text-shadow: textShadow(0.25, 6, #E485F8); // #F2A063);
+		}
   }
 
 	&__subtitle {
@@ -137,14 +151,15 @@ body, html {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: $color-black;
   overflow-x: hidden;
   // transition: 0.5s;
-  padding-top: 35px;
+  padding-top: 35px; 
+  height: 45px;
 
   &.show {
   	width : 250px;
   	height: 100%;
+		background-color: $color-black;
 
 		@media (min-width: 670px) {
 			height: auto;
@@ -153,7 +168,8 @@ body, html {
 
   &.hidden {
   	width: 0;
-  	height: auto;
+    height: 45px;
+  	background-color: $color-white;
   }
 
 	@media (min-width: 670px) {
@@ -162,7 +178,7 @@ body, html {
 		position: absolute;
 		top: 0;
 		left: unset;
-		background-color: transparent;
+		background-color: $color-white;
   	overflow-x: unset;
   	padding: unset;
   	transition : none;
@@ -176,6 +192,8 @@ body, html {
 	    justify-content: space-around;
 	    text-decoration: none;
 	    list-style: none;
+    	height: 100%;
+      align-items: center;
 		}
 	}
 
@@ -194,7 +212,8 @@ body, html {
 		  cursor: pointer;
 		  margin-top: 0;
 		  color: #5362F6;
-		  text-shadow: textShadow(0.25, 6, #E485F8);
+		  text-shadow: textShadow(0.25, 6, transparent); // #E485F8
+    	transition: text-shadow 1s ease;
 		}
 
 	  a {
@@ -205,7 +224,7 @@ body, html {
 	  &:hover {
 
 			@media (min-width: 670px) {
-		  	text-shadow: textShadow(0.25, 6, #d87eeb);
+		  	text-shadow: textShadow(0.25, 6, #E485F8); // #d87eeb);
 			}
 	  }
 	}
@@ -233,16 +252,18 @@ body, html {
 .Blog {
 	border-bottom: 1px $color-light-grey solid;
 	padding-bottom: 4em;
-	margin: 4em;
+	margin: 4em auto;
+	width: 80%;
 
 	@media (min-width: 670px) {
 		width: 50%;
-		margin: 0 auto 4em;
+		margin: 4em auto;
 	}
 
 	h3 {
 		font-family: $font-philosopher;
 		color: $color-dark-grey;
+    margin-bottom: 0.5em;
 	}
 
 	&__picture {   
@@ -257,33 +278,54 @@ body, html {
 		text-overflow:ellipsis;
 		font-family: $font-philosopher;
 		color:$color-dark-grey;
+    height: 20px;
 	}
 }
 
 .BlogItem {
 	border-bottom: 1px $color-light-grey solid;
 	padding-bottom: 4em;
-	margin: 4em;
+	margin: 4em auto;
+	width: 80%;
 
 	@media (min-width: 668px) {
 		width: 50%;
-		margin: 0 auto 4em;
+		margin: 4em auto;
 	}
 
 	h3 {
 		font-family: $font-philosopher;
 		color: $color-dark-grey;
+    margin-bottom: 2em;
 	}
 
 	&__picture {
-		width: 100%;
-    margin: 10px auto;
+    max-width: 85%;
+    margin: 20px auto;
     display: block;
 	}
 
 	&__content {
 		font-family: $font-philosopher;
 		color:$color-dark-grey;
+	}
+	
+}
+
+.Contact {
+	padding-bottom: 4em;
+	margin: 4em auto;
+	width: 80%;
+
+	&__networks {	
+		display: flex;
+    align-items: center;
+		padding-bottom: 4em;
+		color: $color-light-grey;
+		font-family: $font-philosopher;
+		flex-direction: column;
+		margin-top: 4em;
+		text-align: justify;
 	}
 	
 }
@@ -310,8 +352,8 @@ body, html {
 
 	&--home {
 
-		.Networks__picto {		
-    	width: 5em;
+		.Networks__picto {
+  		width: 5em;
 		}
 
 		.Networks__link {
@@ -347,9 +389,12 @@ body, html {
 		font-family: $font-philosopher;
 		flex-direction: column;
 		margin-top: 4em;
+		text-align: justify;
 
 		@media (min-width: 928px) {
 			flex-direction: row;
+    	align-items: flex-start; 	
+			padding-top: 2em;
 		}
 
 		&--center {			
@@ -365,7 +410,7 @@ body, html {
 		}
 
 		.paragraph {
-			padding-left: 20px;
+			font-size: 1.5em;
 		}
 	}
 
@@ -408,6 +453,8 @@ body, html {
 		display: block;
 		font-family: $font-philosopher;
 		color: $color-black;
+    margin: 0 auto 1.5em;
+
 	}
 
 	&__blog {
@@ -421,6 +468,7 @@ body, html {
 			overflow:hidden; 
 			white-space:nowrap; 
 			text-overflow:ellipsis;
+			height: 20px;
 		}
 
 		.Networks {
@@ -526,7 +574,7 @@ body, html {
 	
 }
 
-.PortefolioDeveloppeuse {
+.Informatique {
 	width: 80%;
 	margin: 4em auto;
 
