@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Networks() {
   return (
-    <p className="Networks Networks--home">
+    <p className="Networks">
       <Link target='_blank' className='Networks__link' href='https://www.instagram.com/junkyclo/#'><
         img className='Networks__picto' src='/images/instagram.png' />
       </Link>

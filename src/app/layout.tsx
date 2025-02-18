@@ -62,7 +62,6 @@ export default function RootLayout({
           <ul className="Footer__items">
             <li className="Footer__item"><Link href="/contact">s'abonner à la newsletter</Link></li>
             <li className="Footer__item"><Link href="/contact">contact</Link></li>
-            <li className="Footer__item"><Link href="/qui-suis-je">à propos</Link></li>
           </ul>
         </footer>
       </body>
