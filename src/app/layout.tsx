@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: 'claudine-manrique',
     images: [
       {
-        url: 'https://claudine-manrique.com/images/0001_00.jpg',
+        url: 'https://claudine-manrique.com/images/header.png',
         width: 800,
         height: 600,
       }

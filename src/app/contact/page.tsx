@@ -1,5 +1,10 @@
 import dynamic from 'next/dynamic';
 const NetworksComponent = dynamic(() => import('../networks'));
+ 
+export const metadata: Metadata = {
+  title: 'Claudine Manrique | Contact',
+  description: 'Contact de Claudine Manrique',
+}
 
 export default function Contact() {
   return (

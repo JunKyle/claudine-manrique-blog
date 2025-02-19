@@ -14,7 +14,7 @@ export default function Networks() {
       <Link target='_blank' className='Networks__link' href='https://www.facebook.com/profile.php?id=100012685540669'>
         <img className='Networks__picto' src='/images/facebook.png' />
       </Link>
-      <Link target='_blank' className='Networks__link' href=''>
+      <Link target='_blank' className='Networks__link' href='https://bsky.app/profile/junkyle.bsky.social'>
         <img className='Networks__picto' src='/images/bluesky.svg' />
       </Link>
     </p>

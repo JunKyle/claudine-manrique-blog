@@ -2,6 +2,11 @@ import Image from "next/image";
 import "../page.scss";
 import Link from 'next/link';
 import data from "../data/blog.json";
+ 
+export const metadata: Metadata = {
+  title: 'Claudine Manrique | Informatique',
+  description: 'Portefolio web de Claudine Manrique',
+}
 
 export default function Informatique() {
   return (

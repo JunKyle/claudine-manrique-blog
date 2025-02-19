@@ -3,6 +3,11 @@ import parse from 'html-react-parser';
 import "../page.scss";
 import Link from 'next/link';
 import data from "../data/blog.json";
+ 
+export const metadata: Metadata = {
+  title: 'Claudine Manrique | Bibliographie',
+  description: 'Bibliographie de Claudine Manrique',
+}
 
 export default function Bibliographie() {
   return (
