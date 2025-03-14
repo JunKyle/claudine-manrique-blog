@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "./page.scss";
 import Link from 'next/link';
 import data from "./data/blog.json";
@@ -17,7 +16,7 @@ export default function Home() {
             </div>
             <p className="paragraph">Je suis Claudine Manrique aka JunKyle sur les Internets.<br/><br/>
             Je suis auteurice, développeur·se et artiste à plein temps. Bienvenue sur mon site qui résume mes créations aussi bien
-             dans l'informatique, que dans l'écriture. <br/><br/>J'écris aussi des articles de blog pour un public qui serait intéressé·e 
+             dans l&apos;informatique, que dans l&apos;écriture. <br/><br/>J&apos;écris aussi des articles de blog pour un public qui serait intéressé·e 
              par savoir comment ça se passe dans ma tête.
             </p>
           </div>  

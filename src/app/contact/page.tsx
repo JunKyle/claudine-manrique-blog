@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic';
+import { Metadata } from 'next';
 const NetworksComponent = dynamic(() => import('../networks'));
  
 export const metadata: Metadata = {

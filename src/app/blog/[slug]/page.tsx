@@ -1,10 +1,16 @@
 import data from "../../data/blog.json";
 import parse from 'html-react-parser';
-import Link from "next/link";
+import { Metadata } from 'next';
  
 export const metadata: Metadata = {
   title: 'Claudine Manrique | Blog',
   description: 'Article de Claudine Manrique',
+}
+
+export async function generateStaticParams() { 
+  return [{
+    slug: "page"
+  }]
 }
 
 export default function Blog ({params}) {

@@ -1,6 +1,7 @@
 import parse from 'html-react-parser';
 import data from "../data/blog.json";
 import Link from "next/link";
+import { Metadata } from 'next';
  
 export const metadata: Metadata = {
   title: 'Claudine Manrique | Blog',

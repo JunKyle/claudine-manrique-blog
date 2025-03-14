@@ -2,6 +2,7 @@ import Image from "next/image";
 import "../page.scss";
 import Link from 'next/link';
 import data from "../data/blog.json";
+import { Metadata } from 'next';
  
 export const metadata: Metadata = {
   title: 'Claudine Manrique | Informatique',
@@ -17,7 +18,7 @@ export default function Informatique() {
             {data.informatique?.map((post, i) =>{
               return (
                 <div key={i} className="Informatique__item">
-                  <Image className="Informatique__picture" src={post.picture} width="200" height="200" alt={post.title} />
+                  <img className="Informatique__picture" src={post.picture} alt={post.title} />
                   <div className="Informatique__content">
                     <span className="Informatique__title">{post.title}</span>
                     <p className="Informatique__description">{post.description}</p>

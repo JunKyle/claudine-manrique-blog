@@ -1,13 +1,9 @@
 'use client';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 
-export default function HeaderNav({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function HeaderNav() {
   const [openNav, setOpenNav] = useState(false);
   const pathname = usePathname();
   return (
