@@ -7,13 +7,7 @@ export const metadata: Metadata = {
   description: 'Article de Claudine Manrique',
 }
 
-export async function generateStaticParams({
-    params
-}: {
-    params: {
-        slug: string[]
-    }
-}) {
+export async function generateStaticParams() {
 
   const slugs = data.posts.map((post) => (
      {

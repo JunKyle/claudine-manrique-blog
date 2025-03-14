@@ -5,7 +5,7 @@ import "./page.scss";
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
-const HeaderNavComponent = dynamic(() => import('./headerNav/layout'));
+const HeaderNavComponent = dynamic(() => import('./headernav/layout'));
 
 const localFont = philosopher({
   src: [
