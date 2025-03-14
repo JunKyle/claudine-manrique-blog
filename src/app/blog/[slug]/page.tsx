@@ -7,10 +7,19 @@ export const metadata: Metadata = {
   description: 'Article de Claudine Manrique',
 }
 
-export async function generateStaticParams() { 
-  return [{
-    slug: "page"
-  }]
+export async function generateStaticParams({
+    params
+}: {
+    params: {
+        slug: string[]
+    }
+}) {
+
+  const slugs = data.posts.map((post) => (
+     {
+    slug: post.id
+  }));
+return slugs;
 }
 
 export default function Blog ({params}) {
