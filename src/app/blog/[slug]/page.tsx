@@ -13,19 +13,29 @@ export async function generateStaticParams() {
      {
     slug: post.id
   }));
+  console.log("postId", slugs);
 return slugs;
 }
 
 export default function Blog ({params}) {
     const slug = params.slug;
+    console.log(slug);
 
   return (
             data.posts[slug]?.published && (
               <section className="BlogItem">
-                <h3 className="BlogItem__title">{data.posts[slug].title}</h3>
+                <div className="BlogItem__dateTitle">
+                  <h3 className="BlogItem__title">{data.posts[slug].title}</h3>
+                  <p className="BlogItem__date">
+                      {parse(data.posts[slug].published_date)}
+                  </p>
+                  </div>
                 <img src={data.posts[slug].picture} className="BlogItem__picture" />
                 <p className="BlogItem__content">
                     {parse(data.posts[slug].content)}
+                </p>
+                <p className="BlogItem__date">
+                    {parse(data.posts[slug].published_date)}
                 </p>
                 <p className="Networks">
                     {parse(data.social_networks)}

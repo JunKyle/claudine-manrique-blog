@@ -16,7 +16,12 @@ export default function Blog () {
               return post.published ?  (<section key={i} className="Blog">
                               <Link href={`${post.url}`}>
                                   <img src={post.picture} className="Blog__picture" />
-                                  <h3>{post.title}</h3>
+                                  <div className="Blog__dateTitle">
+                                    <h3>{post.title}</h3>
+                                    <p className="Blog__date">
+                                        {parse(post.published_date)}
+                                    </p>
+                                  </div>
                                   <p className="Blog__content">
                                       {parse(post.content)}
                                   </p>

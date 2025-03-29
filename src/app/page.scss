@@ -255,6 +255,17 @@ body, html {
 	margin: 4em auto;
 	width: 80%;
 
+	&__dateTitle {	
+		display: flex;
+    margin-bottom: 2em;
+    justify-content: space-between;
+	}
+
+	&__date {
+		font-family: $font-philosopher;
+		color: $color-light-grey;
+	}
+
 	@media (min-width: 670px) {
 		width: 50%;
 		margin: 4em auto;
@@ -288,6 +299,17 @@ body, html {
 	margin: 4em auto;
 	width: 80%;
 
+	&__dateTitle {
+		display: flex;
+    margin-bottom: 2em;
+    justify-content: space-between;
+	}
+
+	&__date {
+		font-family: $font-philosopher;
+		color: $color-light-grey;
+	}
+
 	@media (min-width: 668px) {
 		width: 50%;
 		margin: 4em auto;
@@ -296,13 +318,13 @@ body, html {
 	h3 {
 		font-family: $font-philosopher;
 		color: $color-dark-grey;
-    margin-bottom: 2em;
 	}
 
 	&__picture {
     max-width: 85%;
     margin: 20px auto;
     display: block;
+    width: 18em;
 	}
 
 	&__content {
@@ -346,6 +368,7 @@ body, html {
 	&__paragraph {	
 		font-family: $font-philosopher;
     text-align: center;
+		color:$color-light-grey;
 	}
 	
 }
@@ -481,6 +504,8 @@ body, html {
 
     .BlogItem {
     	border: none;
+    	margin: 0 auto;
+    	padding: 0;
     }
 
 		.BlogItem__content {	
@@ -496,11 +521,14 @@ body, html {
 	}
 
 	&__blogLink {
-		position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+		background-color: $color-black;
+		color: $color-white;
+		text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+    width: 27em;
+		margin: 3em auto;
+		display: block;
 	}
 }
 
