@@ -11,8 +11,8 @@ export default function MentionsLegales() {
   return (
   	<section className="Contact">
       <p className="Contact__paragraph">
-        Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, 
-        il est précisé aux utilisateurs du site claudine-manrique l'identité des différents intervenants dans le cadre de 
+        Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l&apos;'économie numérique, 
+        il est précisé aux utilisateurs du site claudine-manrique l&apos;'identité des différents intervenants dans le cadre de 
         sa réalisation et de son suivi.
         <br/>
         Le présent site, accessible à l’URL www.claudine-manrique.fr (le « Site »), est édité par : Claudine Manrique.
