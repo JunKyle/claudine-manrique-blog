@@ -20,7 +20,7 @@ export default function MentionsLegales() {
         Le Site est hébergé par la société YuLPa, situé 16 Rue de Bucarest, 75008 Paris.
         <br/>
         Le Directeur de la publication du Site est Claudine Manrique.
-        Nous contacter par email : claudine.manrique@gmail.com
+        Nous contacter par email : claudine.manrique[at]gmail.com
         <br/>
         Génération des mentions légales par Legalstart.
       </p>

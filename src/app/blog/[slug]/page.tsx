@@ -34,9 +34,6 @@ export default function Blog ({params}) {
                 <p className="BlogItem__content">
                     {parse(data.posts[slug].content)}
                 </p>
-                <p className="BlogItem__date">
-                    {parse(data.posts[slug].published_date)}
-                </p>
                 <p className="Networks">
                     {parse(data.social_networks)}
                 </p>
