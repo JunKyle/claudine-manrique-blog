@@ -122,12 +122,12 @@
 			"content" : ""
 		},
 		{
-			"url": "/blog/5",
+			"url": "/blog/6",
 			"title": "Skell, tome 2 et 3 : que faire ?",
 			"picture":"/images/0006_00.png",
 			"published": false,
 			"published_date": "06/04/2025",
-			"id": "5",
+			"id": "6",
 			"content" : ""
 		},
 		{
@@ -140,12 +140,12 @@
 			"content" : ""
 		},
 		{
-			"url": "/blog/7",
+			"url": "/blog/8",
 			"title": "Burnout de dessins : Carolin-e ma BD autopubliée",
 			"picture":"/images/0008_00.png",
 			"published": false,
 			"published_date": "06/04/2025",
-			"id": "7",
+			"id": "8",
 			"content" : ""
 		}
 	], 
