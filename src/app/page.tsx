@@ -32,10 +32,10 @@ export default function Home() {
           <div className="Home__paragraph Home__paragraph--column">
             <h2 className="Home__title">Dernier article de blog</h2>
             <div className="Home__blog">
-              {(data.posts.findLast((post) =>post.published)) &&
+              {data && data.posts?.length > 0 && (data.posts.findLast((post) =>post.published)) &&
                 <BlogComponent params={{slug: data?.posts?.findLast((post) =>post.published)?.id}} />
               }
-              {(data.posts.findLast((post) =>post.published)) &&
+              {data && data.posts?.length > 0 && (data.posts.findLast((post) =>post.published)) &&
                 <Link className="Home__blogLink" href={`${data?.posts?.findLast((post) =>post.published)?.url}`}>Lire le dernier article</Link>
               }
             </div>
