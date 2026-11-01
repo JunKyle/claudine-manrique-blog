@@ -299,6 +299,11 @@ body, html {
 	margin: 4em auto;
 	width: 80%;
 
+	blockquote {
+		margin: 40px;
+		font-style: italic;
+	}
+
 	&__dateTitle {
 		display: flex;
     margin-bottom: 2em;

@@ -61,7 +61,7 @@ export default function RootLayout({
         {children}
         <footer className="Footer">
           <ul className="Footer__items">
-            <li className="Footer__item"><Link href="/contact">s&apos;abonner à la newsletter</Link></li>
+            <li className="Footer__item"><Link href="https://junkyle.substack.com/?r=rgjvx&utm_campaign=pub-share-checklist">s&apos;abonner à la newsletter</Link></li>
             <li className="Footer__item"><Link href="/mentions-legales">mentions légales</Link></li>
             <li className="Footer__item"><Link href="/contact">contact</Link></li>
           </ul>
